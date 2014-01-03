@@ -1,0 +1,44 @@
+body {
+	background-color: @bg;
+	font-size: 1em;
+	font-family: "Lucida Grande", "Trebuchet MS", sans-serif;
+	padding: 0em;
+	margin: 0em;
+	&._dragging {
+		cursor: move;
+		* {
+			user-select: none;
+		}
+	}
+	&._resizing {
+		cursor: nwse-resize;
+		* {
+			user-select: none;
+		}
+	}
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-weight: normal;
+}
+
+fieldset {
+	border: 1px solid @bg_shadow;
+	border-radius: @defaultBorderRadius;
+	margin-bottom: @defaultPadding;
+}
+
+input[type=number] {
+	text-align: right;
+}
+
+button,
+input,
+select,
+textarea {
+	font-family: inherit;
+}
+
+div {
+	box-sizing: border-box;
+}

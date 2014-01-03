@@ -1,0 +1,110 @@
+._canvasWrapper {
+	overflow: auto;
+	position: relative;
+
+	._canvas {
+		position: relative;
+		overflow: hidden;
+		padding: 0.2em;
+		width: 120%;
+		height: 120%;
+
+		._pictochart {
+			background-color: white;
+			border-radius: @defaultBorderRadius;
+			box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+			background-clip: padding-box; /* prevents bg color from leaking outside the border */
+			display: inline-block;
+			padding: @defaultPadding @defaultPadding 1.5em;
+			user-select: none;
+
+			&._selected {
+				._chartTitle {
+					background-color: @bg_compliment_dark;
+					color: inherit;
+				}
+			}
+
+			._chartTitle {
+				margin: 0em 0em 0.5em;
+				background-color: @bg;
+				color: @bg_shadow;
+				text-align: center;
+				cursor: move;
+			}
+			._chartBody {
+
+				._pictos {
+					display: inline-block;
+					padding: @defaultPadding;
+					border-radius: @defaultBorderRadius;
+					border: 1px solid @bg_compliment_dark;
+
+					.icon {
+						font-size: 2em;
+						&.icon-red {
+							color: #FF6600;
+						}
+						&.icon-blue {
+							color: #2881A0;
+						}
+						&.icon-green {
+							color: #8CBA00;
+						}
+					}
+				}
+			}
+			._chartLegend {
+				position: absolute;
+				left: 100%;
+				top: 0em;
+				padding: @defaultPadding;
+				background-color: white;
+				z-index: -1;
+				border: 1px solid @bg_shadow;
+				border-radius: @defaultBorderRadius @defaultBorderRadius 0 0;
+				margin-left: -1px;
+				ul {
+					list-style: none;
+					padding-left: 0em;
+				}
+			}
+			._chartResizeBtn {
+				position: absolute;
+				bottom: 0em;
+				right: 0em;
+				padding: 0.2em;
+				.icon {
+					color: @bg_dark;
+					vertical-align: middle;
+					&:hover {
+						color: @bg_compliment_dark;
+						cursor: nwse-resize;
+					}
+				}
+			}
+		}
+
+		._draggable {
+			display: inline-block;
+			position: absolute;
+		}
+
+		._resizable {
+			//min-width: 30em;
+		}
+
+	}
+
+	._canvasGrid {
+		background-size: 1.67em 1.67em;
+		background-image: repeating-linear-gradient(0deg, @bg_compliment_dark, @bg_compliment_dark 1px, transparent 1px, transparent 1.67em), repeating-linear-gradient(-90deg, @bg_compliment_dark, @bg_compliment_dark 1px, transparent 1px, transparent 1.67em);
+		height: 100%;
+		width: 100%;
+		opacity: 0.3;
+		position: absolute;
+		top: 0;
+		left: 0;
+		z-index: -4;
+	}
+}

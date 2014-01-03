@@ -1,0 +1,285 @@
+@font-face {
+  font-family: 'pictos';
+  src: url(data:application/x-font-ttf;charset=utf-8;base64,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) format('truetype'), url(data:application/font-woff;charset=utf-8;base64,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) format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+.icon {
+  font-family: 'pictos';
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-fork:before {
+  content: "\e600";
+}
+
+.icon-knife:before {
+  content: "\e601";
+}
+
+.icon-dish:before {
+  content: "\e602";
+}
+
+.icon-resize:before {
+  content: "\e603";
+}
+
+body {
+  background-color: #f5f5f5;
+  font-size: 1em;
+  font-family: "Lucida Grande", "Trebuchet MS", sans-serif;
+  padding: 0em;
+  margin: 0em;
+}
+
+body._dragging {
+  cursor: move;
+}
+
+body._dragging * {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+body._resizing {
+  cursor: nwse-resize;
+}
+
+body._resizing * {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: normal;
+}
+
+fieldset {
+  border: 1px solid #a9a9a9;
+  border-radius: 2px;
+  margin-bottom: 0.5em;
+}
+
+input[type=number] {
+  text-align: right;
+}
+
+button,
+input,
+select,
+textarea {
+  font-family: inherit;
+}
+
+div {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+._canvasWrapper {
+  overflow: auto;
+  position: relative;
+}
+
+._canvasWrapper ._canvas {
+  position: relative;
+  overflow: hidden;
+  padding: 0.2em;
+  width: 120%;
+  height: 120%;
+}
+
+._canvasWrapper ._canvas ._pictochart {
+  background-color: white;
+  border-radius: 2px;
+  -webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
+  /* prevents bg color from leaking outside the border */
+  display: inline-block;
+  padding: 0.5em 0.5em 1.5em;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+._canvasWrapper ._canvas ._pictochart._selected ._chartTitle {
+  background-color: #708090;
+  color: inherit;
+}
+
+._canvasWrapper ._canvas ._pictochart ._chartTitle {
+  margin: 0em 0em 0.5em;
+  background-color: #f5f5f5;
+  color: #a9a9a9;
+  text-align: center;
+  cursor: move;
+}
+
+._canvasWrapper ._canvas ._pictochart ._chartBody ._pictos {
+  display: inline-block;
+  padding: 0.5em;
+  border-radius: 2px;
+  border: 1px solid #708090;
+}
+
+._canvasWrapper ._canvas ._pictochart ._chartBody ._pictos .icon {
+  font-size: 2em;
+}
+
+._canvasWrapper ._canvas ._pictochart ._chartBody ._pictos .icon.icon-red {
+  color: #FF6600;
+}
+
+._canvasWrapper ._canvas ._pictochart ._chartBody ._pictos .icon.icon-blue {
+  color: #2881A0;
+}
+
+._canvasWrapper ._canvas ._pictochart ._chartBody ._pictos .icon.icon-green {
+  color: #8CBA00;
+}
+
+._canvasWrapper ._canvas ._pictochart ._chartLegend {
+  position: absolute;
+  left: 100%;
+  top: 0em;
+  padding: 0.5em;
+  background-color: white;
+  z-index: -1;
+  border: 1px solid #a9a9a9;
+  border-radius: 2px 2px 0 0;
+  margin-left: -1px;
+}
+
+._canvasWrapper ._canvas ._pictochart ._chartLegend ul {
+  list-style: none;
+  padding-left: 0em;
+}
+
+._canvasWrapper ._canvas ._pictochart ._chartResizeBtn {
+  position: absolute;
+  bottom: 0em;
+  right: 0em;
+  padding: 0.2em;
+}
+
+._canvasWrapper ._canvas ._pictochart ._chartResizeBtn .icon {
+  color: #dcdcdc;
+  vertical-align: middle;
+}
+
+._canvasWrapper ._canvas ._pictochart ._chartResizeBtn .icon:hover {
+  color: #708090;
+  cursor: nwse-resize;
+}
+
+._canvasWrapper ._canvas ._draggable {
+  display: inline-block;
+  position: absolute;
+}
+
+._canvasWrapper ._canvasGrid {
+  -webkit-background-size: 1.67em 1.67em;
+  background-size: 1.67em 1.67em;
+  background-image: -webkit-repeating-linear-gradient(90deg, #708090, #708090 1px, transparent 1px, transparent 1.67em), repeating-linear-gradient(-90deg, #708090, #708090 1px, transparent 1px, transparent 1.67em);
+  background-image: repeating-linear-gradient(0deg, #708090, #708090 1px, transparent 1px, transparent 1.67em), repeating-linear-gradient(-90deg, #708090, #708090 1px, transparent 1px, transparent 1.67em);
+  height: 100%;
+  width: 100%;
+  opacity: 0.3;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -4;
+}
+
+._configPanel {
+  width: 24em;
+  height: 100%;
+  background-color: #dcdcdc;
+  padding: 0.5em;
+  overflow-y: auto;
+}
+
+._configPanel._edit #newChart,
+._configPanel._edit #resetChart {
+  display: none;
+}
+
+._configPanel._edit #logChart {
+  display: inline-block;
+}
+
+._configPanel #logChart {
+  display: none;
+}
+
+._configPanel label {
+  display: block;
+}
+
+._configPanel label._invalid {
+  color: red;
+}
+
+._configPanel table {
+  width: 100%;
+}
+
+._configPanel table thead {
+  background-color: #708090;
+}
+
+._configPanel table tbody {
+  background-color: #f5f5f5;
+  text-align: center;
+}
+
+._configPanel ._tableWrap {
+  max-height: 200px;
+  overflow-y: auto;
+}
+
+._configPanel blockquote {
+  background-color: #f5f5f5;
+  border: 1px solid #a9a9a9;
+  padding: 0.5em;
+  font-size: 0.75em;
+}
+
+html,
+body,
+#myPictogram {
+  height: 100%;
+  overflow: hidden;
+}
+
+._canvasWrapper,
+._configPanel {
+  height: 100%;
+}
+
+._configPanel {
+  float: right;
+}
